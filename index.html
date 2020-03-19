@@ -18,21 +18,87 @@
     
     <link rel="stylesheet" href="CSS/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/sachinchoolur/lightgallery.js/master/dist/css/lightgallery.css">
+    <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting.css" />
+    <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting-cells.css" />
 </head>
 <body>
-    <h1>Alex Davisson</h1>
-    <img src="" alt="Alex Davisson">
-    <ul>
-        <li>Pizza</li>
-        <li>Photography</li>
-        <li>Sleep</li>
-    </ul>
-
+  <nav>
+    <img  src="IMG/logo.png" alt="logo">
+    <h1 >Alex Davisson</h1>
   
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/plyr/3.5.6/plyr.min.js"></script>
-   <script src="JS/scripts"></script>
+  </nav>
+  
+    <img class="me"src="" alt="Alex Davisson">
+    <p class="me">
+       Hello, as you already know, my name is Alex. I'm currently a Computer Science Major at EWU and I am also getting a UX Design Certificate.
+       Some hobbies of mine include photography, programming, traveling, and playing videogames.  
+    </p>
+
+    <!---LIGHTBOX GALLERY-->
+
+    <div class="gallery" id = "right">
+      <div class="title" id="photo">
+        <h2>Photography</h2>
+        <p>_____________________________________________________________</p>
+      <a href="IMG/beach.jpg">
+        
+        <img src="IMG/beach.jpg" alt="thumb">
+        
+      </a>
+    
+          <a href="IMG/beach.jpg">
+        
+        <img src="IMG/flower.NEF" alt="thumb">
+        
+          </a>
+        </div>
+        
+      
+      
+    </div>
+    <div class="gallery" id="left">
+      <div class="title">
+        <h2>User Experience Design</h2>
+        <p>_____________________________________________________________</p>
+      <a href="https://picsum.photos/1001/768">
+        
+        <img src="https://placehold.it/200" alt="thumb">
+        
+      </a>
+    
+          <a href="https://picsum.photos/1001/768">
+        
+        <img src="https://placehold.it/200" alt="thumb">
+        
+          </a>
+        </div>
+        
+      
+      
+    </div>
+    <!---   Javascript libraries  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.1.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.1.1/Draggable.min.js"></script>
+    <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.0/gsap.min.js"></script>
+    <script src="https://cdn.rawgit.com/sachinchoolur/lightgallery.js/master/dist/js/lightgallery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.1.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.1.1/Draggable.min.js"></script>
+    <script src="js/scripts.js"></script>
+
+
+
+
+
+
+
+
+
+    
     <!--CONTACT FORM--->
-    <form name="contact" method="POST" data-netlify-recaptcha="true" data-netlify="true">
+    <div id ="form">
+    <form  name="contact" method="POST" data-netlify-recaptcha="true" data-netlify="true">
         <p>
           <label>Your Name: <input type="text" name="name" required /></label>   
         </p>
@@ -50,6 +116,10 @@
           <button type="submit">Send</button>
         </p>
       </form>
+    </div>
+
       
 </body>
+
+
 </html>
