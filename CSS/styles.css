@@ -24,6 +24,7 @@ div .title{
     text-align: center;
     color: gray;
     margin: 0 0;
+    font-family: 'Permanent Marker', cursive;
 }
  div .title p{
     margin-top:0;
@@ -56,4 +57,27 @@ body p{
 div #photo img{
     width:200px;
     height:200px;
+    margin-left: 1%;
+}
+div #UX img{
+    width: 250px;
+    margin-left: 1%;
+}
+
+ img.me{
+    width: 10%;
+    height: 10%;
+    margin-top: 1%;
+}
+
+p{
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 2em;
+}
+
+
+.four{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
 }
